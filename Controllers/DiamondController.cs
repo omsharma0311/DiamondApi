@@ -37,7 +37,7 @@ namespace DiamondApi.Controllers
             {
                 return Ok(_diamondService.AddDiamond(newDiamond));
             }
-
+            /*
             [HttpPut]
             public IActionResult UpdateDiamond(Diamond updateDiamond)
             {
@@ -47,7 +47,7 @@ namespace DiamondApi.Controllers
             public IActionResult DeleteDiamiond(Diamond deleteDiamond)
             {
                 return Ok(_diamondService.DeleteDiamond(deleteDiamond));
-            }
+            }*/
         }
     }
 }

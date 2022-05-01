@@ -11,7 +11,7 @@ namespace DiamondApi.Services
         List<Diamond> GetAllDiamond();
         Diamond GetDiamondById(int id);
         List<Diamond> AddDiamond(Diamond newDiamond);
-        List<Diamond> UpdateDiamond(Diamond updateDiamond);
-        List<Diamond> DeleteDiamond(Diamond updateDiamond);
+      //  List<Diamond> UpdateDiamond(Diamond updateDiamond);
+     //   List<Diamond> DeleteDiamond(Diamond updateDiamond);
     }
 }

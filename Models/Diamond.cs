@@ -8,14 +8,14 @@ namespace DiamondApi.Models
 {
     public class Diamond
     {
-        [Required(ErrorMessage = "Diamond is not valid.")]
+        [Required(ErrorMessage = "Diamond Id is not valid.")]
         public int DiamondId { get; set; }
 
         public string DiamondType { get; set; }
 
 
         [StringLength(maximumLength: 250, MinimumLength = 3)]
-        public string DiamindShape { get; set; }
+        public string DiamondShape { get; set; }
 
         public int DiamondPrice { get; set; }
 
@@ -29,7 +29,7 @@ namespace DiamondApi.Models
 
         public virtual  Retailer RetailerDetails { get; set; }
 
-        public DiamondImage diamondImage { get; set; }
+        public DiamondImage DiamondImage { get; set; }
 
     }
 }
