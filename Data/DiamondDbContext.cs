@@ -1,19 +1,17 @@
 ﻿using DiamondApi.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace DiamondApi.Data
 {
     public class DiamondDbContext : DbContext
     {
-        public DiamondDbContext(DbContextOptions<DiamondDbContext> options) : base(options)
+        public DiamondDbContext() : base("name=DefaultConnection")
         {
                 
         }
         public DbSet<Diamond> Diamond { get; set; }
         public DbSet<DiamondImage> DiamondImage { get; set; }
+        public DbSet<Retailer> Retailer { get; set; }
+
     }
 }

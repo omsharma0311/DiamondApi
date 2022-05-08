@@ -12,11 +12,7 @@ namespace DiamondApi.Models
 
         [StringLength(maximumLength: 250, MinimumLength = 3)]
         public string DiamondTopImage { get; set; }
+        public Diamond Diamond { get; set; }
 
-        [StringLength(maximumLength: 250, MinimumLength = 3)]
-        public string DiamondSideImage { get; set; }
-
-        [StringLength(maximumLength: 250, MinimumLength = 3)]
-        public string DiamondFrontImage { get; set; }
     }
 }
